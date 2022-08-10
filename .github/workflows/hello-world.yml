@@ -6,4 +6,5 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        uses: actions/checkout@v2
+        run: chmod +x ci/build-app.sh && ci/build-app.sh
