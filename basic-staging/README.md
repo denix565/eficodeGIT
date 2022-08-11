@@ -17,11 +17,23 @@ We will also work with `git restore` to restore the staged changes of a file, an
 
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
+source setup.sh
+Initialized empty Git repository in /home/ubuntu/git-katas/basic-staging/exercise/.git/
+Successfully configured local username and email
+Successfully disable local GPG signing
+[master (root-commit) 20afada] 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+Successfully unset local username and email
+Successfully unset local GPG signing
+
 ## The task
 
 You live in your own repository. There is a file called `file.txt`.
 
 1. What's the content of `file.txt`?
+1
+
 2. Overwrite the content in `file.txt`: `echo 2 > file.txt` to change the state of your file in the working directory (or `sc file.txt '2'` in PowerShell)
 3. What does `git diff` tell you?
 4. What does `git diff --staged` tell you? why is this blank?

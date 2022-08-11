@@ -10,10 +10,33 @@ We use reset to unstage change, but we can also do many more different things.
 ## Task
 
 1. How does your working directory look like?
+1.txt  10.txt  2.txt  3.txt  4.txt  5.txt  6.txt  7.txt  8.txt  9.txt
+
 2. What does your log look like? What does your stage look like?
+commit b2dba091b2ab30a6360a176b9f0ac19a7fad42f7 (HEAD -> master)
+Author: Ubuntu <denix565@gmail.com>
+Date:   Tue Aug 9 08:30:44 2022 +0000
+
+    10
+
+commit f9f7d7072e54e91e856c09e5cb97b92ad69be2a8
+Author: Ubuntu <denix565@gmail.com>
+Date:   Tue Aug 9 08:30:44 2022 +0000
+
+    9
+
+commit b046349d45cb858dc8a6f6da8e35767180ba034d
+Author: Ubuntu <denix565@gmail.com>
+Date:   Tue Aug 9 08:30:44 2022 +0000
+:
+Many comits
 3. Try to run `git reset --soft HEAD~1`
 4. What happens to your working directory, your log and your stage?
+git diff --cached
+10 changes 
 5. Run `git reset --mixed HEAD~1`
+git reset --hard HEAD~1
+HEAD is now at b046349 8
 6. What happens to your working directory, your log and your stage?
 7. Run `git reset --hard HEAD~1`
 8. What happens to your working directory, your log and your stage?
